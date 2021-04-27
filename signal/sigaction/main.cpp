@@ -2,7 +2,6 @@
 #include <signal.h>
 #include <unistd.h>
 
-
 // 三参数信号处理函数的实现 **********************************
 void handle(int signum, siginfo_t *info, void *myact) //三参数信号处理函数的实现
 {
@@ -18,12 +17,12 @@ int main(int argc, char *argv[])
     sigaction(SIGTERM, &act, &oldact);
 
     pid_t pid = getpid();
-    union sigval mysigval;
+    union sigval info;
     char ch[] = "Info from handle";
-    mysigval.sival_ptr = ch;
+    info.sival_ptr = ch;
 
     for (;;) {
-        sigqueue(pid, SIGTERM, mysigval); //向本进程发送信号，并传递附加信息
+        sigqueue(pid, SIGTERM, info); //向本进程发送信号，并传递附加信息
         sleep(2);
     }
 }

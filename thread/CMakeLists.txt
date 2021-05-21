@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project("Linux")
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/create)
+add_subdirectory(${CMAKE_SOURCE_DIR}/pthread_create)
 add_subdirectory(${CMAKE_SOURCE_DIR}/pthread_exit)
-#add_subdirectory(${CMAKE_SOURCE_DIR}/wait)
+add_subdirectory(${CMAKE_SOURCE_DIR}/pthread_join)
+add_subdirectory(${CMAKE_SOURCE_DIR}/pthread_cancel)
+add_subdirectory(${CMAKE_SOURCE_DIR}/pthread_detach)

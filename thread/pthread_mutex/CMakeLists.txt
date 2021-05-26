@@ -10,7 +10,7 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(APP_NAME "create")
+set(APP_NAME "mutex")
 project(${APP_NAME})
 
 link_libraries("pthread")

@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.5)
+project("Plugin")
+add_subdirectory(${CMAKE_SOURCE_DIR}/Main)
+add_subdirectory(${CMAKE_SOURCE_DIR}/PluginA)

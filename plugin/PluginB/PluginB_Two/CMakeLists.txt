@@ -4,9 +4,9 @@ project(LPlugin VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
-set(PROJECT_NAME "PluginA_1")
+set(PROJECT_NAME "PluginB_2")
 project(${PROJECT_NAME})
-SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../Main/pluginsA)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../../Main/pluginsB)
 
 include_directories(${CMAKE_SOURCE_DIR}/Main/src)
 

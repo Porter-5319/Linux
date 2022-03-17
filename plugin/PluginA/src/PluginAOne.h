@@ -2,7 +2,7 @@
 #define PLUGINAONE_H
 
 #include <QObject>
-#include <PluginInterfaceA.h>
+#include "PluginA/PluginInterfaceA.h"
 
 #define JSON_PLUGINA_ONE "plugina_one.json"
 
